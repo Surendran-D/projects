@@ -22,6 +22,12 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import java.awt.event.ContainerAdapter;
 import java.awt.event.ContainerEvent;
+import com.toedter.calendar.JCalendar;
+import com.toedter.calendar.JDateChooser;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.JComboBox;
 
 public class Register {
 
@@ -78,14 +84,15 @@ public class Register {
 		frame.getContentPane().setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Kovai Hospital");
+		lblNewLabel.setBounds(218, 33, 257, 57);
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setForeground(Color.YELLOW);
 		lblNewLabel.setBackground(Color.BLUE);
 		lblNewLabel.setFont(new Font("Times New Roman", Font.BOLD, 24));
-		lblNewLabel.setBounds(218, 33, 257, 57);
 		frame.getContentPane().add(lblNewLabel);
 		
 		JButton btnNewButton = new JButton("Register");
+		btnNewButton.setBounds(64, 158, 123, 32);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -105,10 +112,10 @@ public class Register {
 			}
 		});
 		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 16));
-		btnNewButton.setBounds(64, 158, 123, 32);
 		frame.getContentPane().add(btnNewButton);
 		
 		JButton btnUpdate = new JButton("Update");
+		btnUpdate.setBounds(281, 158, 123, 32);
 		btnUpdate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -122,10 +129,10 @@ public class Register {
 			}
 		});
 		btnUpdate.setFont(new Font("Tahoma", Font.BOLD, 16));
-		btnUpdate.setBounds(281, 158, 123, 32);
 		frame.getContentPane().add(btnUpdate);
 		
 		JButton btnDelete = new JButton("Delete");
+		btnDelete.setBounds(499, 158, 123, 32);
 		btnDelete.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Delete de;
@@ -140,12 +147,11 @@ public class Register {
 			}
 		});
 		btnDelete.setFont(new Font("Tahoma", Font.BOLD, 16));
-		btnDelete.setBounds(499, 158, 123, 32);
 		frame.getContentPane().add(btnDelete);
 		
 		JLabel lblNewLabel_1 = new JLabel("New label");
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\DELL\\Pictures\\Down img\\entry img3.jpg"));
 		lblNewLabel_1.setBounds(0, 0, 740, 453);
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\DELL\\Pictures\\Down img\\entry img3.jpg"));
 		frame.getContentPane().add(lblNewLabel_1);
 	}
 }
